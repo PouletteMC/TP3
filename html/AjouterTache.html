@@ -3,9 +3,9 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>Ajouter une tâche</title>
-        <link rel= "stylesheet" href= "../styles/Styles.css"> 
-        <link rel= "stylesheet" href= "../styles/menu_style.css">
-        <script type="text/javascript" src="../js/script.js"></script>
+        <link rel= "stylesheet" href= "../styles/style.css">
+        <link rel= "stylesheet" href= "../styles/menu.css">
+        <script type="text/javascript" src="../js/index.js"></script>
      
     </head>
        
@@ -14,7 +14,7 @@
     <body>
         <div class="header">
           <a href="https://temps-action.com/todo-list">
-            <img srcset="../img/image1.png 480w,../img/image1.png 800w" sizes="(max-width: 600px) 480px, 800px" src="../img/image1.png" alt="ToDo image">
+            <img srcset="../img/todo.png 480w,../img/todo.png 800w" sizes="(max-width: 600px) 480px, 800px" src="../img/todo.png" alt="ToDo image">
           </a>
         </div> 
      
@@ -31,8 +31,8 @@
                     <option> Tâche partagée</option>
                 </select>
                 <br/>
-                <button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
-                <button type="button" class="btn"  onclick="supprimer()">Supprimer</button>
+                <button type="submit" class="btn" onclick="add()">Ajouter</button>
+                <button type="button" class="btn"  onclick="remove()">Supprimer</button>
 
             </form>
         <main>
