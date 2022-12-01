@@ -1,23 +1,16 @@
-let newCommandForm = document.forms.newTaskF;
-
 
 function add(){
-    console.log(document.forms.newTaskF.tache.value);
-    console.log(document.forms.newTaskF.date.value);
 
     const newItem = document.createElement('tr')
     const taskTd = document.createElement('td')
     const dateTd = document.createElement('td')
     const categorieTd = document.createElement('td')
-    taskTd.textContent = document.newTaskF.tache.value
-    dateTd.textContent = document.newTaskF.date.value
-    categorieTd.textContent = document.newTaskF.categorie.value
     
-    console.log(taskTd.textContent)
-    console.log(dateTd.textContent)
-    console.log(categorieTd.textContent)
+    taskTd.textContent = document.task.tache.value
+    dateTd.textContent = document.task.date.value
+    categorieTd.textContent = document.task.categorie.value
 
-    if (!document.newTaskF.tache.checkValidity() || !document.newTaskF.date.checkValidity() || !document.newTaskF.categorie.checkValidity()) return
+    if (!document.task.tache.checkValidity() || !document.task.date.checkValidity() || !document.task.categorie.checkValidity()) return
 
     newItem.append(taskTd, dateTd, categorieTd)
 
