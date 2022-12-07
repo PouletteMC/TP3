@@ -23,7 +23,7 @@
                 <strong>Nom de la tâche</strong> 
                 <input type="text" name="tache" size="25" placeholder = "Nouvelle tâche" required>
                 <label for="start"><strong>Date:</strong></label>
-                <input type="date" id="start" name="date" value="2022-04-01" min="2022-04-01" max="2024-04-30">
+                <input type="date" id="start" name="date" value="2023-01-01" min="2022-04-01" max="2024-04-30">
                 <strong>Catégorie : </strong>
                 <select name="categorie" size=1>
                     <option>Tâche personnelle</option>
@@ -32,7 +32,7 @@
                 </select>
                 <br/>
                 <button type="submit" class="btn" onclick="add()">Ajouter</button>
-                <button type="button" class="btn"  onclick="remove()">Supprimer</button>
+                <button type="button" class="btn"  onclick="remove()">Supprimer tout</button>
 
             </form>
         <main>
@@ -41,9 +41,13 @@
                 <table class="datatable">
                     <thead>
                         <tr>
+
                         <th>Tâche</th>
-                        <th>Date </th>
+                        <th>Début </th>
+                        <th>Temps restant</th>
+                        <th>Temps écoulé</th>
                         <th>Catégorie</th>
+                        <th>Date de fin</th>
 
                         </tr>
                     </thead>
